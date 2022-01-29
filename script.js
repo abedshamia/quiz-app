@@ -1,3 +1,19 @@
+const startBtn = document.querySelector('.start-game');
+const homePage = document.querySelector('.game-panel');
+const questionPage = document.querySelector('.question');
+const homeBtn = document.querySelector('.fa-home');
+startBtn.addEventListener('click', startGame);
+homeBtn.addEventListener('click', restartGame);
+
+function startGame() {
+  homePage.classList.add('hidden');
+  questionPage.classList.remove('hidden');
+}
+
+function restartGame() {
+  homePage.classList.remove('hidden');
+  questionPage.classList.add('hidden');
+}
 // Get the modal
 const modal = document.getElementById('myModal');
 
