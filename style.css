@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #023859;
+  --secondary-color: #012e40;
+  --color-3: #079dd9;
+  --color-4: #49aabf;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  background: url('main.jpg');
+  filter: brightness(0.5) contrast(1.1) saturate(1.5);
+}
+
+.page {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 65%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.game-panel {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.panel-header {
+  margin-top: 2.4rem;
+}
+
+.welcome-msg {
+  font-size: 3.2rem;
+  color: var(--color-3);
+  letter-spacing: 1px;
+  text-shadow: 2px 0px 1px var(--primary-color);
+}
+
+.msg {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  color: var(--color-3);
+}
+
+.panel-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-part {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-input {
+  height: 3.4rem;
+  width: 20rem;
+  padding-left: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.name-input::placeholder {
+  color: white;
+}
+
+.name-input:focus {
+  outline: none;
+  background-color: rgb(245, 245, 245);
+  color: #353242;
+}
+
+.select-difficulty {
+  border: none;
+  outline: none;
+  width: 20rem;
+  height: 3.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-left: 0.4rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-difficulty:active {
+  background-color: rgb(245, 245, 245);
+  color: black;
+}
+
+.select-difficulty option {
+  text-align: center;
+  display: inline-block;
+  color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.select-difficulty::-ms-expand {
+  display: none;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--color-3);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.btn.start-game {
+  background-color: var(--primary-color);
+  padding: 1rem 3rem;
+}
+
+.btn.btn.start-game:hover {
+  background-color: #012e40;
+}
+
+.quote {
+  font-size: 2.4rem;
+  margin-top: 1.2rem;
+  color: var(--color-4);
+  font-style: italic;
+}
+
+.quote:nth-of-type(2) {
+  font-size: 1.8rem;
+}
+
+.leaderboard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+  font-size: 2rem;
+}

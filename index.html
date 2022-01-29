@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Sherlock Homies</title>
+  </head>
+  <body>
+    <div class="background">
+      <img alt="" class="background-img" />
+      <main>
+        <div class="container">
+          <div class="page game-panel">
+            <div class="panel-header">
+              <h1 class="welcome-msg">So you wanna be a homie?</h1>
+              <p class="msg">You shall not pass till you get through the test.</p>
+            </div>
+            <div class="panel-content">
+              <form class="panel-form">
+                <div class="name-part">
+                  <!-- <label for="name">Name</label> -->
+                  <input
+                    type="text"
+                    id="name"
+                    name="fullname"
+                    class="name-input"
+                    placeholder="Your full name. ex: John Wick"
+                    required
+                  />
+                </div>
+                <select class="select-difficulty" required name="difficulty">
+                  <option selected>Difficulty</option>
+                  <option>Easy</option>
+                  <option>Medium</option>
+                  <option>Hard</option>
+                </select>
+                <div class="btns">
+                  <button type="button" class="btn">Rules</button>
+                  <button type="button" class="btn">Leaderboard</button>
+                  <button class="btn start-game" type="submit">Start</button>
+                </div>
+              </form>
+            </div>
+            <div class="quotes">
+              <h4 class="quote">&quot; May the force be with you! &quot;</h4>
+              <h4 class="quote">- StarWars, 1977</h4>
+            </div>
+          </div>
+          <!-- 
+          <div class="page leaderboard">
+            <table class="board-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>John Wick</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>John Wick</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>John Wick</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>John Wick</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
